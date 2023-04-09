@@ -1,0 +1,31 @@
+@tabItemHeight: 50px;
+
+.tabContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    .tabTitleView {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .tabTitle {
+        flex: auto;
+        height: @tabItemHeight;
+        line-height: @tabItemHeight;
+        text-align: center;
+    }
+    .activeTabTitle {
+        .tabTitle;
+        color: aqua;
+        font-weight: bolder;
+        border-top: 1px solid aqua;
+    }
+    .tabContent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: calc(100% - @tabItemHeight);
+        width: 100%;
+    }
+}
