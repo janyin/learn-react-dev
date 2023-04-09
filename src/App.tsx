@@ -6,7 +6,7 @@ function App() {
         {
             key: "tab1",
             title: "Tab 1",
-            content: <div>11111</div>,
+            content: "Tab 1 Content",
         },
         {
             key: "tab2",
